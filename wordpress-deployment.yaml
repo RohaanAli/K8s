@@ -58,7 +58,8 @@ spec:
         ports:
         - containerPort: 80
           name: wordpress
-        nodeSelector: node01
+        nodeSelector: 
+          disk: ssd
         volumeMounts:
         - name: wordpress-persistent-storage
           mountPath: /var/www/html
